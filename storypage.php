@@ -25,15 +25,30 @@ $query = "SELECT * FROM `counts` WHERE user='$username' AND story_id='$id'";
 <head>
 	<title>StoryPage</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.navbar-nav li  a
+    {
+      color: white;
+      text-decoration: none;
+    }
+    body
+    {
+    	
+    	color:white;
+    }
+    .row
+    {
+    	background: black;
+    }
+  </style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #f9c7cd">
+	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #00c6c6">
   <a class="navbar-brand" href="index.php"><img style="width:60px;" src="log.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -58,9 +73,9 @@ $query = "SELECT * FROM `counts` WHERE user='$username' AND story_id='$id'";
     $rows = mysqli_num_rows($query1);
 	?>
 	<div class="container">
-		<div class="row" style="border:1px solid black;margin-top: 20px;">
-			<div class="col-md-8" style="border-right: 1px solid black">
-				<center><h6>Story</h6></center>
+		<div class="row" style="border:5px solid white;margin-top: 20px;">
+			<div class="col-md-8" style="border-right: 3px solid white">
+				<center><h3><?php echo $row['title'] ?></h3></center>
 				<p>
 					<?php echo $row['desp']  ?>
 				</p>

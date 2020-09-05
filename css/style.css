@@ -1,7 +1,3 @@
-/*
-Author: Sajibe Kanti
-
-*/
 
 body {font-family:Arial, Sans-Serif;background: url('st.jpg');background-repeat: no-repeat;background-size: cover;}
 .clearfix:before, .clearfix:after { content: ""; display: table; }
@@ -12,7 +8,3 @@ a:hover {text-decoration:underline;}
 input[type='text'], input[type='email'], input[type='password'] {width: 200px; border-radius: 2px;border: 1px solid #CCC; padding: 10px; color: #333; font-size: 14px; margin-top: 10px;}
 input[type='submit']{padding: 10px 25px 8px; color: #fff; background-color: #78b941; text-shadow: rgba(0,0,0,0.24) 0 1px 0; font-size: 16px; box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0; border: 1px solid #6faf38; border-radius: 2px; margin-top: 10px; cursor:pointer;}
 input[type='submit']:hover {background-color: #80c248;}
-.col-md-3
-{
-	
-}

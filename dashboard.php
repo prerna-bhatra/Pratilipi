@@ -52,9 +52,17 @@ require('db.php');
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.navbar-nav li  a
+    {
+      color: white;
+      text-decoration: none;
+    }
+
+  </style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #f9c7cd">
+	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #00c6c6">
   <a class="navbar-brand" href="index.php"><img style="width:60px;" src="log.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -72,7 +80,7 @@ require('db.php');
   </div>  
 </nav>
 <div class="container">
-<h1>Publichs Unlimited Stories Free</h1>
+<h1>Publish Unlimited Stories Free</h1>
 	<div class="row">
 			<form action="" method="post">
 				<div>
