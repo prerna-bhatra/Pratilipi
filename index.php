@@ -15,9 +15,12 @@ require('db.php');
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    
+  </style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navbarid">
+	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #f9c7cd;">
   <a class="navbar-brand" href="index.php"><img style="width:60px;" src="log.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -27,9 +30,7 @@ require('db.php');
       <li class="nav-item">
         <a class="nav-link" href="dashboard.php">Create</a>
       </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="dashboard.php">Read Count</a>
-      </li>   
+ 
       <li>
       <a class="nav-link"  href="logout.php" class="btn btn-dark">Logout</a> 
   		</li>
@@ -37,10 +38,12 @@ require('db.php');
   </div>  
 </nav>
 <div class="container">
+<center>
 <p>Welcome <?php echo $_SESSION['username']; ?>!</p>
-<p>Pratilipi is one of the largest libraries of stories on the internet, primarily teen-focused. .</p>
+<marquee><p>Pratilipi is one of the largest libraries of stories on the internet, primarily teen-focused.</p></marquee>
 <h1>Stories For You</h1>
-	<div class="row">
+</center>
+	<div class="row" >
     <?php 
     $query = "SELECT * FROM `story` ";
     $result = $connection->query($query);
@@ -50,8 +53,8 @@ require('db.php');
    // echo "string";
     ?>
 		<div class="col-md-3" style="margin: 10px 10px 10px 10px;">
-      <h3><?php echo $row['title'] ?></h3>
-			<a  href="storypage.php?id=<?php echo $row['id'] ?>"><img src="1.jpg" ></a>
+      <h6><?php echo $row['title'] ?> </h6>
+			<a  href="storypage.php?id=<?php echo $row['id'] ?>" ><img src="1.jpg" style="height:400px;" ></a>
 		</div>
   <?php }  ?>
 	</div>

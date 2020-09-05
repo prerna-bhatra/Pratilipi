@@ -33,7 +33,7 @@ $query = "SELECT * FROM `counts` WHERE user='$username' AND story_id='$id'";
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navbarid">
+	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #f9c7cd">
   <a class="navbar-brand" href="index.php"><img style="width:60px;" src="log.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -43,9 +43,7 @@ $query = "SELECT * FROM `counts` WHERE user='$username' AND story_id='$id'";
       <li class="nav-item">
         <a class="nav-link" href="dashboard.php">Create</a>
       </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="dashboard.php">Read Count</a>
-      </li>   
+       
       <li>
       <a class="nav-link"  href="logout.php" class="btn btn-dark">Logout</a> 
   		</li>
@@ -61,16 +59,27 @@ $query = "SELECT * FROM `counts` WHERE user='$username' AND story_id='$id'";
 	?>
 	<div class="container">
 		<div class="row" style="border:1px solid black;margin-top: 20px;">
-			<div class="col-md-8">
+			<div class="col-md-8" style="border-right: 1px solid black">
+				<center><h6>Story</h6></center>
 				<p>
 					<?php echo $row['desp']  ?>
 				</p>
 			</div>
 			<div class="col-md-4">
+				Reda Counts
 				<i class="fa fa-eye"></i>
-				<?php echo $rows; ?>
+
+				<?php echo $rows;  ?>
+					<P>Viewers</P>
+				<?php while ($row = $query1->fetch_assoc()) {
+											
+				?>
+			<?php echo $row['user']."\n"; ?>
+			<?php } ?>
 			</div>
 		</div>
 	</div>
 </body>
 </html>
+
+

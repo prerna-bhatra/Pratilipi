@@ -3,7 +3,7 @@ Author: Sajibe Kanti
 
 */
 
-body {font-family:Arial, Sans-Serif;}
+body {font-family:Arial, Sans-Serif;background: url('st.jpg');background-repeat: no-repeat;background-size: cover;}
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 a {color:#78b941; text-decoration:none;}

@@ -54,7 +54,7 @@ require('db.php');
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navbarid">
+	<nav class="navbar navbar-expand-md " id="navbarid" style="background-color: #f9c7cd">
   <a class="navbar-brand" href="index.php"><img style="width:60px;" src="log.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -64,9 +64,7 @@ require('db.php');
       <li class="nav-item">
         <a class="nav-link" href="dashboard.php">Create</a>
       </li>   
-       <li class="nav-item">
-        <a class="nav-link" href="dashboard.php">Read Count</a>
-      </li> 
+       
       <li>
       <a class="nav-link"  href="logout.php" class="btn btn-dark">Logout</a> 
   		</li>
